@@ -11,6 +11,7 @@ const Detail = sequelize.define('Detail', {
         type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
+        autoIncrement: true,
     },
     name: {
         type: DataTypes.STRING,
