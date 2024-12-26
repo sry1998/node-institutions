@@ -10,6 +10,9 @@ const Board = sequelize.define('Board', {
         type: DataTypes.STRING,
         allowNull: false,
     }
+}, {
+    tableName: 'Board',
+    timestamps: false,
 })
 
 module.exports = Board;

@@ -80,6 +80,9 @@ const Detail = sequelize.define('Detail', {
         },
         allowNull: true,
     }
+},{
+    tableName: 'Detail',
+    timestamps: false,
 })
 
 module.exports = Detail;

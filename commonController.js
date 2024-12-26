@@ -1,6 +1,6 @@
 const Detail = require('./models/details');
 
-const InstitueType = require('./models/institutetypes');
+const InstituteType = require('./models/institutetypes');
 const Board = require('./models/boards');
 const ClassCategory = require('./models/classCategories');
 const Degree = require('./models/degrees');
@@ -13,7 +13,7 @@ const University = require('./models/universities');
 
 const getInsitiute = async (req, res) => {
     try {
-        const instituteType = await InstitueType.findAll({});
+        const instituteType = await InstituteType.findAll({});
         res.send(instituteType);
     } catch(err) {
         console.log('Error::', err)

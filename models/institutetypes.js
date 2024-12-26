@@ -1,6 +1,6 @@
 const { DataTypes, Sequelize } = require('sequelize');
 const sequelize = require('../db');
-const InstitueType = sequelize.define('InstituteType', {
+const InstituteType = sequelize.define('InstituteType', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -10,6 +10,9 @@ const InstitueType = sequelize.define('InstituteType', {
         type: DataTypes.STRING,
         allowNull: false,
     }
+},{
+    tableName: 'InstituteType',
+    timestamps: false,
 })
 
-module.exports = InstitueType;
+module.exports = InstituteType;

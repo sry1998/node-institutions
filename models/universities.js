@@ -10,6 +10,9 @@ const University = sequelize.define('University', {
         type: DataTypes.STRING,
         allowNull: false,
     },
+},{
+    tableName: 'University',
+    timestamps: false,
 })
 
 module.exports = University;

@@ -10,6 +10,9 @@ const Medium = sequelize.define('Medium', {
         type: DataTypes.STRING,
         allowNull: false,
     }
+},{
+    tableName: 'Medium',
+    timestamps: false,
 })
 
 module.exports = Medium;

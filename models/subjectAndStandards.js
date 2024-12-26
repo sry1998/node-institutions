@@ -22,6 +22,9 @@ const SubjectAndStandard = sequelize.define('SubjectAndStandard', {
             key: 'id',
         }
     }
+},{
+    tableName: 'SubjectAndStandard',
+    timestamps: false,
 })
 
 module.exports = SubjectAndStandard

@@ -10,6 +10,9 @@ const ClassCategory = sequelize.define('ClassCategory', {
         type: DataTypes.STRING,
         allowNull: false,
     }
+},{
+    tableName: 'ClassCategory',
+    timestamps: false,
 })
 
 module.exports = ClassCategory;

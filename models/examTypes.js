@@ -10,6 +10,9 @@ const ExamTypes = sequelize.define('ExamTypes', {
         type: DataTypes.STRING,
         allowNull: false,
     },
+},{
+    tableName: 'ExamTypes',
+    timestamps: false,
 })
 
 module.exports = ExamTypes;

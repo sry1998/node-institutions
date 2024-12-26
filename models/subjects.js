@@ -10,6 +10,9 @@ const Subject = sequelize.define('Subject', {
         type: DataTypes.STRING,
         allowNull: false,
     },
+},{
+    tableName: 'Subject',
+    timestamps: false,
 })
 
 module.exports = Subject;

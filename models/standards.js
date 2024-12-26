@@ -18,13 +18,9 @@ const Standard = sequelize.define('Standard', {
             key: 'id',
         }
     },
-    subject: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: 'Subject',
-            key: 'id',
-        }
-    }
+},{
+    tableName: 'Standard',
+    timestamps: false,
 })
 
 module.exports = Standard;
